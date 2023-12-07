@@ -1,5 +1,5 @@
 # See LICENSE file for copyright and license details.
-NAME = countdown
+NAME = cdwn
 LOCATION = /usr/local/bin/
 CC = cc
 CFLAGS = -Wall -Werror -g -pedantic
@@ -11,7 +11,7 @@ OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
 
-countdown: $(OBJ)
+cdwn: $(OBJ)
 	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 %.o: %.c
